@@ -354,3 +354,11 @@ body.playing-on .wa-float { bottom: 88px; }
   * { animation: none !important; transition: none !important; }
   .rv { opacity: 1; transform: none; }
 }
+/* iPhone / older Safari fixes */
+#loader, .loader-inner, #wipe, #menu, #overlay { top: 0; right: 0; bottom: 0; left: 0; }
+.cover img, .pimg img, .m-cover img { top: 0; right: 0; bottom: 0; left: 0; }
+.logo-fade { height: min(280px, 70vw); }
+.hero-logo { height: min(300px, 74vw); }
+.about-logo img { height: min(320px, 80vw); }
+.failsafe #loader { display: none !important; }
+.failsafe .rv { opacity: 1 !important; transform: none !important; }
